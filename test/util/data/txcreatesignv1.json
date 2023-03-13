@@ -19,7 +19,7 @@
     ],
     "vout": [
         {
-            "value": 0.00100000,
+            "value": 0.10000000,
             "n": 0,
             "scriptPubKey": {
                 "asm": "OP_DUP OP_HASH160 b9b3036866a5f5b67e77688dd1ff7af37d40599a OP_EQUALVERIFY OP_CHECKSIG",

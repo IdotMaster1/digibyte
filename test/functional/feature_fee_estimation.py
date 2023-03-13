@@ -100,7 +100,7 @@ def split_inputs(from_node, txins, txouts, initial_split=False):
     tx.vin.append(CTxIn(COutPoint(int(prevtxout["txid"], 16), prevtxout["vout"]), b""))
 
     half_change = satoshi_round(prevtxout["amount"] / 2)
-    rem_change = prevtxout["amount"] - half_change - Decimal("0.00100000")
+    rem_change = prevtxout["amount"] - half_change - Decimal("0.10000000")
     tx.vout.append(CTxOut(int(half_change * COIN), P2SH_1))
     tx.vout.append(CTxOut(int(rem_change * COIN), P2SH_2))
 

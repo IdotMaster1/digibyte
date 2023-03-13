@@ -253,7 +253,7 @@ class MultiWalletTest(DigiByteTestFramework):
         assert_equal(w2.getwalletinfo()['paytxfee'], 0)
         w2.settxfee(0.001)
         assert_equal(w1.getwalletinfo()['paytxfee'], 0)
-        assert_equal(w2.getwalletinfo()['paytxfee'], Decimal('0.00100000'))
+        assert_equal(w2.getwalletinfo()['paytxfee'], Decimal('0.10000000'))
 
         self.log.info("Test dynamic wallet loading")
 
