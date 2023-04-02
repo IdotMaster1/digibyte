@@ -5,7 +5,7 @@ Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
 Source: https://github.com/digibyte-core/digibyte
 
 Files: *
-Copyright: 2009-2021, DigiByte Core Developers
+Copyright: 2009-2023, DigiByte Core Developers
 License: Expat
 Comment: The DigiByte Core Developers encompasses the current developers listed on digibyte.org,
          as well as the numerous contributors to the project.

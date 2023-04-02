@@ -30,7 +30,7 @@
 #define COPYRIGHT_HOLDERS_SUBSTITUTION "DigiByte Core"
 
 /* Copyright year */
-#define COPYRIGHT_YEAR 2021
+#define COPYRIGHT_YEAR 2023
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1

@@ -1201,7 +1201,6 @@ CTransactionRef GetTransaction(const CBlockIndex* const block_index, const CTxMe
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
     CAmount nSubsidy = COIN;
-    LogPrintf("block height for reward is %d\n", nHeight);
 
     if (nHeight < consensusParams.nDiffChangeTarget) { // < 67200
         if (nHeight < 1440)

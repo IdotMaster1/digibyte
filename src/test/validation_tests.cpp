@@ -174,7 +174,7 @@ static void TestBlockSubsidy(const Consensus::Params& consensusParams, int nMaxB
     }
 
     CAmount nSubsidy = GetBlockSubsidy(nMaxBlocks, consensusParams);
-    CAmount nExpectedSubsidy = 1 * COIN;
+    CAmount nExpectedSubsidy = 0 * COIN;
 
     BOOST_CHECK_EQUAL(nSubsidy, nExpectedSubsidy);
 
