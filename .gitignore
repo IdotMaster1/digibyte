@@ -116,3 +116,5 @@ test/cache/*
 
 libdigibyteconsensus.pc
 contrib/devtools/split-debug.sh
+
+.vscode/
