@@ -47,6 +47,7 @@ int TrafficGraphWidget::getGraphRangeMins() const
     return nMins;
 }
 
+/*
 void TrafficGraphWidget::paintPath(QPainterPath &path, QQueue<float> &samples)
 {
     int sampleCount = samples.size();
@@ -61,7 +62,8 @@ void TrafficGraphWidget::paintPath(QPainterPath &path, QQueue<float> &samples)
         }
         path.lineTo(x, YMARGIN + h);
     }
-}
+} 
+*/
 
 void TrafficGraphWidget::paintEvent(QPaintEvent *)
 {
@@ -104,7 +106,7 @@ void TrafficGraphWidget::paintEvent(QPaintEvent *)
             painter.drawLine(XMARGIN, yy, width() - XMARGIN, yy);
         }
     }
-
+/*
     if(!vSamplesIn.empty()) {
         QPainterPath p;
         paintPath(p, vSamplesIn);
@@ -118,7 +120,8 @@ void TrafficGraphWidget::paintEvent(QPaintEvent *)
         painter.fillPath(p, QColor(255, 0, 0, 128));
         painter.setPen(Qt::red);
         painter.drawPath(p);
-    }
+    } 
+    */
 }
 
 void TrafficGraphWidget::updateRates()
