@@ -205,11 +205,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xc3;
-        pchMessageStart[2] = 0xb6;
-        pchMessageStart[3] = 0xda;
-        nDefaultPort = 12024;
+        pchMessageStart[0] = 0xe8;
+        pchMessageStart[1] = 0xc9;
+        pchMessageStart[2] = 0xf0;
+        pchMessageStart[3] = 0xa1;
+        nDefaultPort = 14200;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1637347145, 467930, 0x1e0ffff0, 1, 88 * COIN);        consensus.hashGenesisBlock = genesis.GetHash();
