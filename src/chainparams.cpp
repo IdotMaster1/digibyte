@@ -77,10 +77,10 @@ public:
         strNetworkID = "main";
         //consensus.nSubsidyHalvingInterval = 210000; - DGB
         consensus.BIP16Exception = uint256S("0x0");
-        consensus.BIP34Height = 4394880;
-        consensus.BIP34Hash = uint256S("0xadd8ca420f557f62377ec2be6e6f47b96cf2e68160d58aeb7b73433de834cca0");
-        consensus.BIP65Height = 4394880; // 
-        consensus.BIP66Height = 4394880; // 
+        consensus.BIP34Height = NULL;
+        consensus.BIP34Hash = uint256S("0x0");
+        consensus.BIP65Height = NULL; // 
+        consensus.BIP66Height = NULL; // 
 
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
         consensus.initialTarget[ALGO_ODO] = ArithToUint256(~arith_uint256(0) >> 40); // 256 difficulty
@@ -142,10 +142,10 @@ public:
 
 
         // DigiByte Hard Fork Block Heights
-        consensus.multiAlgoDiffChangeTarget = 145000; // Block 145,000 MultiAlgo Hard Fork
-        consensus.alwaysUpdateDiffChangeTarget = 400000; // Block 400,000 MultiShield Hard Fork
-        consensus.workComputationChangeTarget = 1430000; // Block 1,430,000 DigiSpeed Hard Fork
-        consensus.algoSwapChangeTarget = 9100000; // Block 9,100,000 Odo PoW Hard Fork
+        consensus.multiAlgoDiffChangeTarget = NULL; // Block 145,000 MultiAlgo Hard Fork
+        consensus.alwaysUpdateDiffChangeTarget = NULL; // Block 400,000 MultiShield Hard Fork
+        consensus.workComputationChangeTarget = NULL; // Block 1,430,000 DigiSpeed Hard Fork
+        consensus.algoSwapChangeTarget = NULL; // Block 9,100,000 Odo PoW Hard Fork
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -198,7 +198,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x6495a84f8f83981a435a6cbf9e6dd4bf0f38618c8325213ca6ef6add40c0ddd8"); // Block 6,000,000
+        consensus.defaultAssumeValid = uint256S("0x0"); // Block 6,000,000
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -234,7 +234,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        bech32_hrp = "dgb";
+        bech32_hrp = "bkc";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -251,7 +251,7 @@ public:
         chainTxData = ChainTxData{
             // Data as of block 6495a84f8f83981a435a6cbf9e6dd4bf0f38618c8325213ca6ef6add40c0ddd8 (height 6,000,000).
             1637347145, // * UNIX timestamp of last known number of transactions
-            1,  // * total number of transactions between genesis and that timestamp
+            0,  // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.1         // * estimated number of transactions per second after that timestamp
         };

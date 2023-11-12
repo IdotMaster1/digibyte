@@ -44,6 +44,6 @@ static const int SHORT_IDS_BLOCKS_VERSION = 70014;
 static const int INVALID_CB_NO_BAN_VERSION = 70015;
 
 //! first odo version
-static const int ODO_FORK_VERSION = 70017;
+static const int ODO_FORK_VERSION = 170017;
 
 #endif // DIGIBYTE_VERSION_H
